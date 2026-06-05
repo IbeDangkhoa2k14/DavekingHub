@@ -8,7 +8,4 @@ else
         Player:Kick("unsupported")
     end)
     task.wait(0.5)
-    pcall(function()
-        game:Shutdown()
-    end)
-end
+    
