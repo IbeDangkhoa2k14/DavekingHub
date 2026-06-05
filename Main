@@ -1,0 +1,14 @@
+local Players = game:GetService("Players")
+local Player = Players.LocalPlayer or Players.PlayerAdded:Wait()
+
+if game.PlaceId == 75888315541325 or game.GameId == 75888315541325 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IbeDangkhoa2k14/DavekingHub/refs/heads/main/Push%20rock%20for%20Brainrots"))()
+else
+    pcall(function()
+        Player:Kick("unsupported")
+    end)
+    task.wait(0.5)
+    pcall(function()
+        game:Shutdown()
+    end)
+end
